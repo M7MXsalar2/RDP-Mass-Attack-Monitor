@@ -11,6 +11,10 @@ laws and ethics anyway - and tell themselves they are one of the good ones.)
 ------------
 
 ### Prerequisites:
+As you might understand from the description it uses thc-hydra (tested on v.9.3)
+Use the latest release or compile it yourself:
+https://github.com/vanhauser-thc/thc-hydra
+
 1. Tor services are required, remove code in `attack.sh` below to not use proxies.
 ```bash
   HYDRA_PROXY=socks5://l:p@127.0.0.1:9050
