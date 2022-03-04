@@ -1,5 +1,9 @@
 # RDP Mass Attack & Monitor
 
+Please don't use in military or secret service organizations, or for illegal
+purposes. (This is a wish and non-binding - most such people do not care about
+laws and ethics anyway - and tell themselves they are one of the good ones.)
+
 #### As you know THC-Hydra is not very happy with massive lists when attacking RDP. It either errors out completely or provides false negatives.
 
 ![monitor sh](https://user-images.githubusercontent.com/100805450/156768359-9081427b-199a-40ed-a69e-31495a633878.png)
